@@ -1229,6 +1229,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     <a class="nav-link active" data-page="home" onclick="show('home',this)">Home</a>
     <a class="nav-link" data-page="services" onclick="show('services',this)">Services</a>
     <a class="nav-link" data-page="workflows" onclick="show('workflows',this)">Workflows</a>
+    <a class="nav-link" onclick="showAndScroll('home','knowledge-systems',this)">AI Internal Knowledge</a>
     <a class="nav-link" data-page="usecases" onclick="show('usecases',this)">Use Cases</a>
     <a class="nav-link" data-page="roi" onclick="show('roi',this)">ROI</a>
     <a class="nav-link" data-page="about" onclick="show('about',this)">About</a>
@@ -1243,6 +1244,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
   <a class="nav-link" onclick="show('home',null);toggleMobileNav()">Home</a>
   <a class="nav-link" onclick="show('services',null);toggleMobileNav()">Services</a>
   <a class="nav-link" onclick="show('workflows',null);toggleMobileNav()">Workflows</a>
+  <a class="nav-link" onclick="showAndScroll('home','knowledge-systems',null);toggleMobileNav()">AI Internal Knowledge</a>
   <a class="nav-link" onclick="show('usecases',null);toggleMobileNav()">Use Cases</a>
   <a class="nav-link" onclick="show('roi',null);toggleMobileNav()">ROI</a>
   <a class="nav-link" onclick="show('about',null);toggleMobileNav()">About</a>
@@ -1648,6 +1650,102 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
       <div class="svc-card reveal tilt-card"><div class="svc-icon">🧠</div><h3 class="h4" style="margin-bottom:.6rem">Internal Knowledge AI</h3><p class="body-sm">Connect AI to your SOPs, docs, and internal info. Instant answers, no more searching.</p><span class="tag" style="margin-top:1rem;display:inline-block">Zero knowledge loss</span></div>
     </div>
   </div>
+
+  <!-- ═══ AI INTERNAL KNOWLEDGE SYSTEMS ═══════════════════════ -->
+  <div id="knowledge-systems" style="position:relative;padding:clamp(4rem,8vw,7rem) 0;overflow:hidden">
+    <div aria-hidden="true" style="position:absolute;top:10%;left:50%;transform:translateX(-50%);width:min(900px,90vw);height:480px;background:radial-gradient(ellipse at center,rgba(0,229,255,0.08) 0%,rgba(139,92,246,0.05) 40%,transparent 70%);pointer-events:none;filter:blur(30px)"></div>
+
+    <div class="section" style="position:relative">
+      <div class="section-intro reveal" style="max-width:760px">
+        <span class="label">AI Internal Knowledge Systems</span>
+        <h2 class="h2" style="margin-bottom:1.1rem">Stop searching.<br><span class="grad-text">Start knowing.</span></h2>
+        <p>Your team wastes hours every week hunting for answers across docs, drives, and chats. This system turns your company knowledge into an AI that every employee can ask — instantly.</p>
+      </div>
+
+      <div class="ks-grid" style="display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,3vw,2.5rem);margin-top:3rem">
+
+        <div class="reveal" style="padding:clamp(1.5rem,2.5vw,2rem);border:1px solid var(--b1);border-radius:var(--radius-lg);background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.005));backdrop-filter:blur(6px)">
+          <div style="font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:1.25rem">What it does</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem">
+            <li style="display:flex;gap:.9rem;align-items:flex-start">
+              <span style="flex:0 0 26px;height:26px;border-radius:8px;background:rgba(0,229,255,0.1);border:1px solid rgba(0,229,255,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);font-size:.8rem">▸</span>
+              <span style="color:var(--text);font-size:.95rem;line-height:1.6">AI trained on your internal documents, SOPs, and workflows</span>
+            </li>
+            <li style="display:flex;gap:.9rem;align-items:flex-start">
+              <span style="flex:0 0 26px;height:26px;border-radius:8px;background:rgba(0,229,255,0.1);border:1px solid rgba(0,229,255,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);font-size:.8rem">▸</span>
+              <span style="color:var(--text);font-size:.95rem;line-height:1.6">Answers employee questions instantly — in plain language</span>
+            </li>
+            <li style="display:flex;gap:.9rem;align-items:flex-start">
+              <span style="flex:0 0 26px;height:26px;border-radius:8px;background:rgba(0,229,255,0.1);border:1px solid rgba(0,229,255,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);font-size:.8rem">▸</span>
+              <span style="color:var(--text);font-size:.95rem;line-height:1.6">Pulls real data from your sources — no guessing, no hallucinations</span>
+            </li>
+            <li style="display:flex;gap:.9rem;align-items:flex-start">
+              <span style="flex:0 0 26px;height:26px;border-radius:8px;background:rgba(0,229,255,0.1);border:1px solid rgba(0,229,255,0.25);display:flex;align-items:center;justify-content:center;color:var(--cyan);font-size:.8rem">▸</span>
+              <span style="color:var(--text);font-size:.95rem;line-height:1.6">Works across Google Drive, Notion, PDFs, Slack, and more</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal" style="padding:clamp(1.5rem,2.5vw,2rem);border:1px solid rgba(0,229,160,0.18);border-radius:var(--radius-lg);background:linear-gradient(180deg,rgba(0,229,160,0.04),rgba(0,229,255,0.02));position:relative;overflow:hidden">
+          <div aria-hidden="true" style="position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(circle,rgba(0,229,160,0.15),transparent 70%);pointer-events:none"></div>
+          <div style="font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:1.25rem;position:relative">The outcome</div>
+          <div style="display:flex;flex-direction:column;gap:1rem;position:relative">
+            <div style="display:flex;align-items:baseline;gap:.75rem">
+              <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;color:var(--green);min-width:1.5rem">→</span>
+              <span style="color:var(--text);font-size:.95rem;line-height:1.55">Reduce internal questions and interruptions</span>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:.75rem">
+              <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;color:var(--green);min-width:1.5rem">→</span>
+              <span style="color:var(--text);font-size:.95rem;line-height:1.55">Onboard new employees in days, not months</span>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:.75rem">
+              <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;color:var(--green);min-width:1.5rem">→</span>
+              <span style="color:var(--text);font-size:.95rem;line-height:1.55">Fewer mistakes in daily operations</span>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:.75rem">
+              <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;color:var(--green);min-width:1.5rem">→</span>
+              <span style="color:var(--text);font-size:.95rem;line-height:1.55">Save hours of manual work every single week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:clamp(2.5rem,4vw,3.5rem)">
+        <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.5rem">
+          <span style="font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">Optional Extensions</span>
+          <span style="flex:1;height:1px;background:linear-gradient(90deg,var(--b1),transparent)"></span>
+        </div>
+        <div class="ks-ext-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem">
+          <div style="padding:1.35rem 1.4rem;border:1px solid var(--b1);border-radius:var(--radius);background:rgba(255,255,255,0.015);transition:border-color .3s ease,transform .3s ease" onmouseover="this.style.borderColor='rgba(0,229,255,0.22)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--b1)';this.style.transform='none'">
+            <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:.45rem">HR &amp; Policy Assistant</div>
+            <div style="font-size:.82rem;color:var(--muted);line-height:1.6">Instant answers on company rules, contracts, and policies.</div>
+          </div>
+          <div style="padding:1.35rem 1.4rem;border:1px solid var(--b1);border-radius:var(--radius);background:rgba(255,255,255,0.015);transition:border-color .3s ease,transform .3s ease" onmouseover="this.style.borderColor='rgba(0,229,255,0.22)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--b1)';this.style.transform='none'">
+            <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:.45rem">Hiring &amp; Recruitment AI</div>
+            <div style="font-size:.82rem;color:var(--muted);line-height:1.6">Job descriptions, candidate screening, and outreach — automated.</div>
+          </div>
+          <div style="padding:1.35rem 1.4rem;border:1px solid var(--b1);border-radius:var(--radius);background:rgba(255,255,255,0.015);transition:border-color .3s ease,transform .3s ease" onmouseover="this.style.borderColor='rgba(0,229,255,0.22)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--b1)';this.style.transform='none'">
+            <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:.45rem">Training &amp; Onboarding AI</div>
+            <div style="font-size:.82rem;color:var(--muted);line-height:1.6">Helps new hires learn faster and hit productivity sooner.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:clamp(2.5rem,4vw,3.5rem);text-align:center;padding:clamp(2rem,4vw,3rem) 1.5rem;border:1px solid var(--b1);border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(0,229,255,0.035),rgba(139,92,246,0.035))">
+        <h3 class="h3" style="margin-bottom:.7rem;max-width:640px;margin-left:auto;margin-right:auto">Turn your company knowledge into an <span class="grad-text-blue">AI system.</span></h3>
+        <p style="color:var(--muted);font-size:.92rem;max-width:520px;margin:0 auto 1.6rem;line-height:1.65">See exactly how much time your team is losing — and what it would look like fixed.</p>
+        <button class="btn btn-primary" onclick="show('waitlist',null)">Build your internal AI system</button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @media(max-width:900px){
+      .ks-grid{grid-template-columns:1fr !important}
+      .ks-ext-grid{grid-template-columns:1fr !important}
+    }
+  </style>
+  <!-- ═══ /AI INTERNAL KNOWLEDGE SYSTEMS ══════════════════════ -->
 
   <!-- HOW IT WORKS -->
   <div style="background:var(--bg2);padding:clamp(3rem,6vw,6rem) 0">
@@ -3182,6 +3280,21 @@ document.addEventListener('mousemove', e => {
 });
 
 /* ─── PAGE NAV ──────────────────────────────────── */
+function showAndScroll(pageId, anchorId, linkEl){
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(pageId).classList.add('active');
+  document.querySelectorAll('.nav-link').forEach(a => a.classList.remove('active'));
+  if (linkEl) linkEl.classList.add('active');
+  initReveal();
+  setTimeout(() => {
+    const el = document.getElementById(anchorId);
+    if (el) {
+      const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 68;
+      const top = el.getBoundingClientRect().top + window.pageYOffset - navH - 16;
+      window.scrollTo({top: top, behavior: 'smooth'});
+    }
+  }, 80);
+}
 function show(id, linkEl) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById(id).classList.add('active');
